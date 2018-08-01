@@ -1088,18 +1088,6 @@ namespace Xceed.Wpf.Toolkit.PropertyGrid
       {
         childrenItemsControl = _containerHelper.ChildrenItemsControl;
         _containerHelper.ClearHelper();
-        if( _containerHelper is ObjectContainerHelperBase )
-        {
-          // If the actual AdvancedOptionMenu is the default menu for selected object, 
-          // remove it. Otherwise, it is a custom menu provided by the user.
-          // This "default" menu is only valid for the SelectedObject[s] case. Otherwise, 
-          // it is useless and we must remove it.
-          //var defaultAdvancedMenu = (ContextMenu)this.FindResource( PropertyGrid.SelectedObjectAdvancedOptionsMenuKey );
-          //if( this.AdvancedOptionsMenu == defaultAdvancedMenu )
-          //{
-            this.AdvancedOptionsMenu = null;
-          //}
-        }
       }
 
 
