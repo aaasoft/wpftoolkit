@@ -168,7 +168,7 @@ namespace Xceed.Wpf.Toolkit
 
     private void CancelButton_Click( object sender, RoutedEventArgs e )
     {
-      _collectionControl.PersistChanges( originalData );
+      //_collectionControl.PersistChanges( originalData );
       this.DialogResult = false;
       this.Close();
     }

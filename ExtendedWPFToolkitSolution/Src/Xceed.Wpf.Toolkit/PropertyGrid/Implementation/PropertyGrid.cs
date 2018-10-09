@@ -198,7 +198,7 @@ namespace Xceed.Wpf.Toolkit.PropertyGrid
 
     #region FilterWatermark
 
-    public static readonly DependencyProperty FilterWatermarkProperty = DependencyProperty.Register( "FilterWatermark", typeof( string ), typeof( PropertyGrid ), new UIPropertyMetadata( "Search" ) );
+    public static readonly DependencyProperty FilterWatermarkProperty = DependencyProperty.Register( "FilterWatermark", typeof( string ), typeof( PropertyGrid ), new UIPropertyMetadata( "搜索" ) );
     public string FilterWatermark
     {
       get

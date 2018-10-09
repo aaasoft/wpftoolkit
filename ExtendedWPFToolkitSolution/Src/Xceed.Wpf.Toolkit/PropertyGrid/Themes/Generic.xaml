@@ -917,7 +917,7 @@
   <ContextMenu x:Key="{ComponentResourceKey 
                   TypeInTargetAssembly={x:Type pg:PropertyGrid}, 
                   ResourceId=SelectedObjectAdvancedOptionsMenu}">
-    <MenuItem Header="Reset Value"
+    <MenuItem Header="重置值"
               Command="commands:PropertyItemCommands.ResetValue" />
   </ContextMenu>
 

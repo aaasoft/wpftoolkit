@@ -71,7 +71,7 @@
         <xctk:WatermarkTextBox Grid.Row="1"
                                Grid.Column="1"
                                Width="175"
-                               Watermark="Search"
+                               Watermark="搜索"
                                Text="{Binding Filter, ElementName=_propertyGrid, UpdateSourceTrigger=PropertyChanged}"
                                VerticalAlignment="Center"
                                Margin="5"
