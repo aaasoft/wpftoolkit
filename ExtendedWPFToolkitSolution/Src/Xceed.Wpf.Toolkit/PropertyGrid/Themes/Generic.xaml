@@ -316,7 +316,7 @@
     <Setter Property="BorderThickness"
             Value="0" />
     <Setter Property="Content"
-            Value="(Collection)" />
+            Value="(集合)" />
   </Style>
 
   <!-- PropertyGrid CollectionControl Editors -->

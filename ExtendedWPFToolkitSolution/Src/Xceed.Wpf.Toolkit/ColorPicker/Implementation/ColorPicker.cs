@@ -67,7 +67,7 @@ namespace Xceed.Wpf.Toolkit
 
     #region AdvancedButtonHeader
 
-    public static readonly DependencyProperty AdvancedButtonHeaderProperty = DependencyProperty.Register( "AdvancedButtonHeader", typeof( string ), typeof( ColorPicker ), new UIPropertyMetadata( "Advanced" ) );
+    public static readonly DependencyProperty AdvancedButtonHeaderProperty = DependencyProperty.Register( "AdvancedButtonHeader", typeof( string ), typeof( ColorPicker ), new UIPropertyMetadata( "高级" ) );
     public string AdvancedButtonHeader
     {
       get
@@ -136,7 +136,7 @@ namespace Xceed.Wpf.Toolkit
 
     #region AvailableColorsHeader
 
-    public static readonly DependencyProperty AvailableColorsHeaderProperty = DependencyProperty.Register( "AvailableColorsHeader", typeof( string ), typeof( ColorPicker ), new UIPropertyMetadata( "Available Colors" ) );
+    public static readonly DependencyProperty AvailableColorsHeaderProperty = DependencyProperty.Register( "AvailableColorsHeader", typeof( string ), typeof( ColorPicker ), new UIPropertyMetadata( "可用颜色" ) );
     public string AvailableColorsHeader
     {
       get
@@ -454,7 +454,7 @@ namespace Xceed.Wpf.Toolkit
 
     #region StandardButtonHeader
 
-    public static readonly DependencyProperty StandardButtonHeaderProperty = DependencyProperty.Register( "StandardButtonHeader", typeof( string ), typeof( ColorPicker ), new UIPropertyMetadata( "Standard" ) );
+    public static readonly DependencyProperty StandardButtonHeaderProperty = DependencyProperty.Register( "StandardButtonHeader", typeof( string ), typeof( ColorPicker ), new UIPropertyMetadata( "标准" ) );
     public string StandardButtonHeader
     {
       get
@@ -488,7 +488,7 @@ namespace Xceed.Wpf.Toolkit
 
     #region StandardColorsHeader
 
-    public static readonly DependencyProperty StandardColorsHeaderProperty = DependencyProperty.Register( "StandardColorsHeader", typeof( string ), typeof( ColorPicker ), new UIPropertyMetadata( "Standard Colors" ) );
+    public static readonly DependencyProperty StandardColorsHeaderProperty = DependencyProperty.Register( "StandardColorsHeader", typeof( string ), typeof( ColorPicker ), new UIPropertyMetadata( "标准颜色" ) );
     public string StandardColorsHeader
     {
       get

@@ -248,7 +248,7 @@
     <Setter Property="VerticalContentAlignment"
             Value="Center" />
     <Setter Property="Content"
-            Value="(Collection)" />
+            Value="(集合)" />
     <Setter Property="SnapsToDevicePixels"
             Value="True" />
     <Setter Property="MinHeight"

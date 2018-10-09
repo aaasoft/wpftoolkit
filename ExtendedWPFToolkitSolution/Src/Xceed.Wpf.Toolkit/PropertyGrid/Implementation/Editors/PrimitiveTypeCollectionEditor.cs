@@ -23,7 +23,7 @@ namespace Xceed.Wpf.Toolkit.PropertyGrid.Editors
     protected override void SetControlProperties( PropertyItem propertyItem )
     {
       Editor.BorderThickness = new System.Windows.Thickness( 0 );
-      Editor.Content = "(Collection)";
+      Editor.Content = "(集合)";
     }
 
     protected override void SetValueDependencyProperty()
