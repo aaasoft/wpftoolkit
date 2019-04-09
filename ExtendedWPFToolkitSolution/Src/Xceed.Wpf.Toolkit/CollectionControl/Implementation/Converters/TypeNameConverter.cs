@@ -16,12 +16,12 @@ namespace Xceed.Wpf.Toolkit.Converters
             var type = value as Type;
             if (type == null)
                 return null;
-            var attr = type.GetCustomAttributes(typeof(DisplayNameAttribute), false)
+            var typeName = string.Join(" - ", type.GetCustomAttributes(typeof(DisplayNameAttribute), true)
                 .Select(t => (DisplayNameAttribute)t)
-                .FirstOrDefault();
-            if (attr != null)
-                return attr.DisplayName;
-            return type.Name;
+                .Select(t => t.DisplayName));
+            if (string.IsNullOrEmpty(typeName))
+                typeName = type.Name;
+            return typeName;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
