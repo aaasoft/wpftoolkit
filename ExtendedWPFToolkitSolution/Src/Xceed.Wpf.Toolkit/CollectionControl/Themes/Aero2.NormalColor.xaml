@@ -30,6 +30,7 @@
   <conv:InverseBoolConverter x:Key="InverseBoolConverter" />
   <conv:ObjectTypeToNameConverter x:Key="ObjectTypeToNameConverter" />
   <colconv:NewItemTypesComboBoxConverter x:Key="NewItemTypesComboBoxConverter" />
+  <colconv:TypeNameConverter x:Key="TypeNameConverter" />
 
   <Style x:Key="CollectionControlButtonStyle"
          TargetType="{x:Type Button}">
@@ -90,8 +91,12 @@
                 <ComboBox x:Name="PART_NewItemTypesComboBox"
                           Grid.Row="1"
                           Margin="0,0,0,3"
-                          HorizontalAlignment="Stretch"
-                          DisplayMemberPath="Name">
+                          HorizontalAlignment="Stretch">
+                  <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                    <TextBlock Text="{Binding Converter={StaticResource TypeNameConverter}}" />
+                  </DataTemplate>
+                  </ComboBox.ItemTemplate>
                   <ComboBox.ItemsSource>
                     <MultiBinding Converter="{StaticResource NewItemTypesComboBoxConverter}">
                       <Binding RelativeSource="{RelativeSource TemplatedParent}"
